@@ -340,6 +340,8 @@ namespace AsistenteV2
                 locationFD.Filter = newfiletype;
                 locationFD.Multiselect = false;
                 locationFD.InitialDirectory = desktop;
+                locationFD.DereferenceLinks = false;
+
                 if (locationFD.ShowDialog() == DialogResult.OK)
                 {
                     if (newExecutable == null)
